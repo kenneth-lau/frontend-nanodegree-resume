@@ -49,7 +49,7 @@ var education = {
             "url": "https://www.udacity.com/course/intro-to-html-and-css--ud304"
         },
         {
-            "title": "Linus Command Line Basics",
+            "title": "Linux Command Line Basics",
             "school": "Udacity",
             "dates": "August 2016",
             "url": "https://classroom.udacity.com/courses/ud595"
@@ -215,11 +215,12 @@ education.display = function(){
             }
         };
 
+
         if (education.onlineCourses.length > 0) {
-            $(".education-entry:last").append(HTMLonlineClasses);
+            $("#education").append(HTMLonlineClasses);
 
             for (course in education.onlineCourses){
-                
+                $("#education").append(HTMLschoolStart);
                 var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[course].title);
                 var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[course].school);
                 var formattedOnlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[course].dates);
@@ -243,3 +244,24 @@ education.display();
 
 // Add a map
 $("#mapDiv").append(googleMap);
+
+// Internationize name
+function inName(name) {
+    name = name.trim().split(" "); //.trim removes the whitespace from the front and the back of the string
+    console.log(name);
+    name[1] = name[1].toUpperCase();
+    name[0] = name[0].slice(0,1).toUpperCase() + name[0].slice(1).toLowerCase();
+
+    return name[0] + " " + name[1];
+}
+
+$('#main').append(internationalizeButton);
+
+// Collecting clicks
+$(document).click(function(loc) {
+  // your code goes here
+  var x = loc.pageX;
+  var y = loc.pageY;
+
+  logClicks(x,y);
+});
