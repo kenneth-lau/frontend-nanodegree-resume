@@ -2,8 +2,6 @@
 var bio = {
     "name": "Kenneth Lau",
     "role": "Technical Writer",
-    "welcomeMessage": "Welcome to Futurama",
-    "bioPic": "images/fry.jpg",
     "contacts": {
         "mobile": "+81-80-7883-8076",
         "email": "kennethcklau@gmail.com",
@@ -11,9 +9,9 @@ var bio = {
         "twitter": "@KennethLau19",
         "location": "Tokyo, Japan"
     },
-    "skills": [
-        "Git", "HTML", "CSS", "JavaScript"
-    ]
+    "welcomeMessage": "Welcome to Futurama",
+    "skills": ["Git", "HTML", "CSS", "JavaScript"],
+    "bioPic": "images/fry.jpg",
 };
 
 var education = {
@@ -258,10 +256,11 @@ function inName(name) {
 $('#main').append(internationalizeButton);
 
 // Collecting clicks
+/*
 $(document).click(function(loc) {
-  // your code goes here
   var x = loc.pageX;
   var y = loc.pageY;
 
   logClicks(x,y);
 });
+*/
