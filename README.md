@@ -5,7 +5,8 @@ This repository contains the final "Resume" project of the ["JavaScript Basics"]
 Final "Resume" project: https://kenneth-lau.github.io/udacity-javascript-basics/
 
 
-Details of the project from Udacity
+## Details of the project from Udacity
+
 ```
 # Project Details
 ## How do I complete this project?
