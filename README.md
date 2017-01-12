@@ -1,10 +1,11 @@
 # Notes from the "JavaScript Basics" Udacity course
 
-This repository contains the final "Resume" project of the "JavaScript Basics" course along with some notes from the quizzes and problem sets. 
+This repository contains the final "Resume" project of the ["JavaScript Basics"](https://classroom.udacity.com/courses/ud804) course along with some notes from the quizzes and problem sets. 
 
 Final "Resume" project: https://kenneth-lau.github.io/udacity-javascript-basics/
 
 
+Details of the project from Udacity
 ```
 # Project Details
 ## How do I complete this project?
